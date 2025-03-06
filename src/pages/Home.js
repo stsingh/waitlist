@@ -16,7 +16,7 @@ const Home = () => {
         <div className="max-w-3xl mx-auto space-y-8">
           <AnimatedTitle />
           <p className="text-2xl text-black mb-8 italic">
-            Find the Best Skincare in Seconds — Backed by Real Reviews, Not Hype.
+            Find <u>Your</u> Perfect Skincare in Seconds — Backed by Real Reviews, Not Hype.
           </p>
           <EmailForm />
           <div className="pt-6">
