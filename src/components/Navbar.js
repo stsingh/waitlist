@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Mail, Send, Linkedin } from 'react-feather';
+import logo from '../back_imgs/SarasLogo.png';
 
 export const Navbar = () => {
   const location = useLocation();
@@ -19,9 +20,15 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-black">
-              SARAS
-            </Link>
+            <img
+              src={logo}
+              alt="SARAS Logo"
+              style={{
+                height: '40px',
+                marginLeft: '20px',
+                cursor: 'pointer'
+              }}
+            />
           </div>
           
           {/* Navigation Links */}
@@ -39,13 +46,13 @@ export const Navbar = () => {
             >
               Products
             </Link> */}
-            <a
+            {/* <a
               href="#contact"
               className="group relative p-2"
               onMouseEnter={() => setIsMailOpen(true)}
               onMouseLeave={() => setIsMailOpen(false)}
-            >
-              {isMailOpen ? <Send size={24} className="transform rotate-45" /> : <Mail size={24} />}
+            > */}
+              {/* {isMailOpen ? <Send size={24} className="transform rotate-45" /> : <Mail size={24} />}
               <div className="absolute bottom-0 left-0 w-full h-0.5 bg-black origin-left transform scale-x-0 transition-transform group-hover:scale-x-100" 
                    style={{ animation: 'squiggly 0.5s ease-in-out forwards' }} />
             </a>
@@ -58,7 +65,7 @@ export const Navbar = () => {
               <Linkedin size={24} />
               <div className="absolute bottom-0 left-0 w-full h-0.5 bg-black origin-left transform scale-x-0 transition-transform group-hover:scale-x-100"
                    style={{ animation: 'squiggly 0.5s ease-in-out forwards' }} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
