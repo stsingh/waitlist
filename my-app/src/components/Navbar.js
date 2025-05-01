@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Mail, Send, Linkedin } from 'react-feather';
-import logo from '../back_imgs/SarasLogo.png';
 
 export const Navbar = () => {
   const location = useLocation();
@@ -20,26 +19,51 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img
-              src={logo}
+            {/* <img
+              src="/SarasLogo.svg"
               alt="SARAS Logo"
               style={{
                 height: '40px',
                 marginLeft: '20px',
                 cursor: 'pointer'
               }}
-            />
+            /> */}
+            <p className="text-[#2B2B2B] text-2xl font-bold">SARAS</p>
           </div>
           
           {/* Navigation Links */}
           <div className="flex items-center space-x-6">
-            {/* <Link 
-              to="/" 
-              className={`text-black hover:opacity-75 transition-opacity ${location.pathname === '/' ? 'font-bold' : ''}`}
+            <a
+              href="#hero"
+              className="text-black hover:opacity-75 transition-opacity"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Home
-            </Link>
-            <Link 
+            </a>
+            <a
+              href="#about"
+              className="text-black hover:opacity-75 transition-opacity"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              About
+            </a>
+            <a
+              href="#contact"
+              className="text-black hover:opacity-75 transition-opacity"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Contact
+            </a>
+            {/* <Link 
               to="/products" 
               onClick={handleProductsClick}
               className={`text-black hover:opacity-75 transition-opacity ${location.pathname === '/products' ? 'font-bold' : ''}`}

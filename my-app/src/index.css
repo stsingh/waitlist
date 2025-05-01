@@ -1,0 +1,79 @@
+/* Add Gilmer Font Face Rules */
+@font-face {
+  font-family: 'Gilmer-Regular';
+  src: url('../public/fonts/Gilmer/Gilmer-Regular-Trial.woff2') format('woff2');
+  font-weight: 400; /* normal */
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Gilmer-Thin';
+  src: url('../public/fonts/Gilmer/Gilmer-Thin-Trial.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilmer-Light';
+  src: url('../public/fonts/Gilmer/Gilmer-Light-Trial.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilmer-Medium';
+  src: url('../public/fonts/Gilmer/Gilmer-Medium-Trial.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilmer-Bold';
+  src: url('../public/fonts/Gilmer/Gilmer-Bold-Trial.woff2') format('woff2');
+  font-weight: 700; /* bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilmer-Heavy';
+  src: url('../public/fonts/Gilmer/Gilmer-Heavy-Trial.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* End Gilmer Font Face Rules */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+/* } */
+
+/* @font-face {
+  font-family: "Gilmer-Trial";
+  src: local("Gilmer-Trial"),
+       url("../Gilmer-Trial/OTF/Gilmer-Bold-Trial.otf") format("truetype");
+  font-weight: normal;
+}
+
+.font-face-gm {
+  font-family: "Gilmer-Trial";
+} */

@@ -68,9 +68,9 @@ export const EmailForm = () => {
           onBlur={() => setIsFocused(false)}
           placeholder="Type your email..."
           disabled={status.loading}
-          className={`w-full px-4 py-2 text-lg bg-[#EDDAC5] transition-all duration-300
-            ${isFocused || email ? 'border-2 border-black' : 'border-2 border-[#c9b59b]'}
-            focus:outline-none rounded-lg placeholder-gray-500
+          className={`w-full px-4 py-2 text-lg bg-[#F9F8F4] transition-all duration-300
+            ${isFocused || email ? 'border-2 border-[#2B2B2B]' : 'border-2 border-[#706E67]'}
+            focus:outline-none rounded-lg placeholder-[#706E67]
             hover:border-black
             ${status.loading ? 'opacity-75' : ''}`}
           required
@@ -79,8 +79,8 @@ export const EmailForm = () => {
           type="submit"
           disabled={status.loading}
           className={`absolute right-2 top-1/2 transform -translate-y-1/2
-                     px-4 py-1 text-black rounded-md
-                     hover:bg-black hover:text-white transition-all duration-300
+                     px-4 py-1 text-[#2B2B2B] rounded-md
+                     hover:bg-[#2B2B2B] hover:text-[#FFFEF2] transition-all duration-300
                      ${status.loading ? 'opacity-75 cursor-not-allowed' : ''}`}
         >
           {status.loading ? 'Joining...' : 'Join'}

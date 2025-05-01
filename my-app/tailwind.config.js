@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -35,7 +37,10 @@ module.exports = {
       },
       transformStyle: {
         '3d': 'preserve-3d',
-      }
+      },
+      fontFamily: {
+        sans: ['Gilmer-Thin', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [],

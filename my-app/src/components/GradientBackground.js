@@ -1,22 +1,22 @@
 import React, { useEffect, useRef } from "react";
-import img1 from '../back_imgs/AMADERM.png';
-import img2 from '../back_imgs/Balm.png';
-import img3 from '../back_imgs/BodyWash.png';
-import img4 from '../back_imgs/lotion.png';
-import img5 from '../back_imgs/facecream.png';
-import img6 from '../back_imgs/Grapefruit.png';
-import img7 from '../back_imgs/green.webp';
-import img8 from '../back_imgs/Nimue.png';
-import img9 from '../back_imgs/purplecream.webp';
-import img10 from '../back_imgs/Retinoid.png';
-import img11 from '../back_imgs/Retinol.png';
-import img12 from '../back_imgs/SeaSalt.png';
 
 export const GradientBackground = () => {
   const containerRef = useRef(null);
+  // Define image paths using absolute URLs relative to the /public folder
   const images = [
-    img1, img2, img3, img4, img5, img6,
-    img7, img8, img9, img10, img11, img12
+    '/images/products/AMADERM.png',      // Example path for img1 (assuming it exists)
+    '/images/products/Balm.png',         // img2
+    '/images/products/BodyWash.png',     // img3
+    '/images/products/lotion.png',       // img4
+    '/images/products/facecream.png',    // img5
+    '/images/products/Grapefruit.png',   // img6
+    '/images/products/green.webp',       // img7
+    '/images/products/Nimue.png',        // img8
+    '/images/products/purplecream.webp', // img9
+    '/images/products/Retinoid.png',     // img10
+    '/images/products/Retinol.png',      // img11
+    '/images/products/SeaSalt.png'       // img12
+    // Note: Added AMADERM.png as img1, adjust if needed
   ];
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export const GradientBackground = () => {
   ];
 
   return (
-    <div ref={containerRef} className="fixed inset-0 -z-10 bg-[#EDDAC5] overflow-hidden">
+    <div ref={containerRef} className="fixed inset-0 -z-10 bg-[#FFFEF2] overflow-hidden">
       <div
         className="absolute inset-0"
         style={{
