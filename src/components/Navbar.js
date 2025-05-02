@@ -31,7 +31,7 @@ export const Navbar = () => {
             <p className="text-2xl font-bold">SARAS</p>
           </div>
           
-          {/* Navigation Links */}
+          {/* Navigation Links
           <div className="flex items-center space-x-6">
             <a
               href="#hero"
@@ -62,7 +62,7 @@ export const Navbar = () => {
               }}
             >
               Contact
-            </a>
+            </a> */}
             {/* <Link 
               to="/products" 
               onClick={handleProductsClick}
@@ -90,7 +90,7 @@ export const Navbar = () => {
               <div className="absolute bottom-0 left-0 w-full h-0.5 bg-black origin-left transform scale-x-0 transition-transform group-hover:scale-x-100"
                    style={{ animation: 'squiggly 0.5s ease-in-out forwards' }} />
             </a> */}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </nav>

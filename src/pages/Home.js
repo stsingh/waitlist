@@ -137,8 +137,15 @@ const Home = () => {
               We use <u>real</u> user reviews along with <u>your</u> skin type to give you <u>unbiased</u> recommendations. 
             </p>
           </div>
-          <div className="w-full mt-6 items-start justify-start max-w-md mx-auto md:mx-0">
-              <EmailForm />
+          <div className="w-full mt-6 flex justify-center md:justify-start max-w-md mx-auto md:mx-0">
+              <button
+                onClick={() => document.getElementById('waitlist-form-section')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-3 text-[#FFFEF2] bg-[#2B2B2B] border-2 border-[#2B2B2B] rounded-lg 
+                           hover:bg-opacity-90 hover:border-opacity-90 transition-all duration-300
+                           text-lg font-semibold" // Added text size and weight
+              >
+                Join Waitlist
+              </button>
           </div>
         </section>
 
@@ -200,7 +207,7 @@ const Home = () => {
       {/* Section 4: Waitlist/Contact - Now Responsive */} 
       <div className="flex flex-col md:flex-row items-center justify-center py-12 md:py-24 px-4 space-y-12 md:space-y-0 md:space-x-8">
         {/* Left Side: Waitlist */} 
-        <div className="flex flex-col w-full md:w-1/2 items-center justify-center space-y-8">
+        <div id="waitlist-form-section" className="flex flex-col w-full md:w-1/2 items-center justify-center space-y-8">
           <h1 className="text-4xl font-bold text-center">Our Waitlist</h1>
           <EmailForm />
           {/* <section id="survey" className="flex flex-col items-center justify-center w-full">
