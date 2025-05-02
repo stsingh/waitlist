@@ -1,0 +1,51 @@
+# Dependencies (ignore within my-app)
+node_modules/
+
+# Build output (ignore within my-app)
+build/
+dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env*.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Yarn PnP files
+.pnp/
+.pnp.js
+
+# Testing
+coverage/
+
+# Misc Project Specific
+.cursor
+Gilmer-Trial/ # Keep ignoring the original trial font folder
+
+# NOTE: DO NOT ignore public/fonts/ or public/images/
+# if they contain assets needed for the site.
+backend/.env
+backend/node_modules
